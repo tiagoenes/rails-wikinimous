@@ -4,12 +4,20 @@
     <title>RailsWikinimous</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
   </head>
-
   <body>
+    <div class="container-fluid bar">
+      <div class="content d-flex justify-content-between">
+        <div><%= link_to "WIKINIMOUS", articles_path %></div>
+        <div class="add-article">
+          <%= link_to new_article_path do %>
+          <i class="fas fa-plus-circle"></i> Add an article
+        <% end %></div>
+      </div>
+    </div>
     <%= yield %>
   </body>
 </html>

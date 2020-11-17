@@ -1,0 +1,47 @@
+@import "bootstrap/scss/bootstrap";
+ul{
+  list-style-type: none;
+ }
+.bar {
+  background-color: #e2dfdf;
+  border-bottom: 1px solid #B9B9B9;
+}
+.bar a{
+  display: inline-block;
+}
+.content div{
+  margin:10px;
+}
+.content a{
+  text-decoration: none;
+  color:grey;
+}
+
+.content a:hover{
+  color: #6C6C6C;
+}
+.article-content a{
+  text-decoration:none;
+  color:grey;
+  text-align: justify;
+}
+.articles .article-content{
+  border-radius: 15px;
+  padding: 15px 15px;
+  margin-bottom: 10px;
+  min-height:200px;
+  box-shadow:2px 2px 2px 2px #e8e5e5;
+  border: 1px solid #ececec;
+}
+
+.articles .article-content:hover{
+  background-color: whitesmoke;
+}
+.article-title{
+  padding-left: 15px;
+}
+.article-title a{
+  text-decoration: underline;
+  display:inline-block;
+  margin-bottom:5px;
+}
